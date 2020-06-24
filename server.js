@@ -21,7 +21,7 @@ app.use(express.static("public"));
 //   useFindAndModify: false
 // });
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://Budge-Track:8udgetTR@CKER@ds253418.mlab.com:53418/heroku_19x8r55r", {
+mongoose.connect(process.env.MONGODB_URI || `mongodb://Budge-Track:${encodeURIComponent('8udgetTR@CKER')}@ds253418.mlab.com:53418/heroku_19x8r55r`, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
