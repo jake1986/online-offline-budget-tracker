@@ -5,7 +5,6 @@ const compression = require("compression");
 
 const PORT = 3000;
 
-
 const app = express();
 
 app.use(logger("dev"));
@@ -16,11 +15,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || `mongodb://Budge-Track:${encodeURIComponent('8udgetTR@CKER')}@ds253418.mlab.com:53418/heroku_19x8r55r`, {
+mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
-
 
 // routes
 app.use(require("./routes/api.js"));
