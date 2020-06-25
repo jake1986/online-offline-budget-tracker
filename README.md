@@ -6,4 +6,4 @@ This is a financial budget tracker application that allows users to add and subt
 
 ## Installation
 
-The app is launched in Heroku and can be opened by ___________. The application can be forked or cloned from GITHUB. 
+The app is launched in Heroku and can be opened by ___________. The application can be forked or cloned from GitHub. 
