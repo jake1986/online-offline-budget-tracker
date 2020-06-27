@@ -3,8 +3,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
-const PORT = 3000;
-
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -16,10 +15,17 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || `mongodb://Budge-Track:${encodeURIComponent('8udgetTR@CKER')}@ds253418.mlab.com:53418/heroku_19x8r55r`, {
+var MONGODB_URI = process.env.MONGODB_URL || `mongodb://Budge-Track:${encodeURIComponent('8udgetTR@CKER')}@ds253418.mlab.com:53418/heroku_19x8r55r`
+
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
+
+// mongoose.connect(process.env.MONGODB_URI || `mongodb://Budge-Track:${encodeURIComponent('8udgetTR@CKER')}@ds253418.mlab.com:53418/heroku_19x8r55r`, {
+//   useNewUrlParser: true,
+//   useFindAndModify: false
+// });
 
 
 // routes
