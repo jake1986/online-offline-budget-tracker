@@ -11,3 +11,8 @@ The app is launched in Heroku and can be opened by ___________. The application 
 ## Deployed Repo
 
  https://jake1986.github.io/online-offline-budget-tracker/
+ 
+ ## GitDuck App Walk-Through
+ 
+ https://gitduck.com/watch/5ef8f14fbde709455bd77c59
+ 
