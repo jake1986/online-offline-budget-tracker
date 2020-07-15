@@ -14,5 +14,5 @@ The app is launched on Heroku and can be opened by https://arcane-bayou-50060.he
  
  ## GitDuck App Walk-Through
  
-https://gitduck.com/watch/5f0e684dc3d82845c4ed5947
+ https://gitduck.com/watch/5f0e6e81c3d8283992ed5948
  
